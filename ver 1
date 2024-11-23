@@ -1,0 +1,22 @@
+#Number Guesser - Version 1
+#24 NOV 2024
+#Evan Sunil
+
+
+
+import random
+#Target variable to store a random target number for the user to guess
+target = random.randint(1,100)
+#Guess variable to store the user's guess number
+guess = int(input("please guess the number: "))
+
+
+if guess == target: #Check whether the user's guess is the same as the target
+    print("congratulations! you got the number")
+elif guess < target: #Check whether the user's guess is less than the target
+    print("your guess was too low")
+elif guess > target: #check whether the user's guess is greater than the target
+    print("your guess was too high")
+else:                 #In case something goes wrong-shouldn't actually run
+    print("something went wrong")
+
